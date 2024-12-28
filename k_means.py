@@ -60,7 +60,7 @@ plt.xlabel('Number of clusters (k)')
 plt.ylabel('Inertia')
 plt.show()
 
-kmeans2 = KMeans(n_clusters=3, random_state=42)
+kmeans2 = KMeans(n_clusters=4, random_state=42)
 clusters2 = kmeans2.fit_predict(X_scaled2)
 
 data['Cluster2'] = clusters2
@@ -90,7 +90,7 @@ plt.xlabel('Number of clusters (k)')
 plt.ylabel('Inertia')
 plt.show()
 
-kmeans3 = KMeans(n_clusters=3, random_state=42)
+kmeans3 = KMeans(n_clusters=4, random_state=42)
 clusters3 = kmeans3.fit_predict(X_scaled3)
 
 data['Cluster3'] = clusters3
