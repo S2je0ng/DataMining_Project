@@ -32,3 +32,13 @@ plt.barh(X.columns, feature_importance)
 plt.xlabel('Feature Importance')
 plt.title('RandomForestRegressor - Feature Importance')
 plt.show()
+
+
+# 변수 중요도를 파일로 저장
+importance_df = pd.DataFrame({
+    '변수': X.columns,
+    '중요도': feature_importance
+})
+
+# CSV 파일로 저장 (utf-8 인코딩)
+importance_df.to_csv('feature_importance.csv', index=False, encoding='utf-8')
